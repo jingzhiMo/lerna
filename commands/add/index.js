@@ -36,6 +36,7 @@ class AddCommand extends Command {
   }
 
   initialize() {
+    // test comment
     this.spec = npa(this.options.pkg);
     this.dirs = new Set(this.options.globs.map(fp => path.resolve(this.project.rootPath, fp)));
     this.selfSatisfied = this.packageSatisfied();
