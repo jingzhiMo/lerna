@@ -127,6 +127,7 @@ class AddCommand extends Command {
     return chain;
   }
 
+  // 收集有修改过的包
   collectPackagesToChange() {
     const { name: targetName } = this.spec;
     let result = this.filteredPackages;
